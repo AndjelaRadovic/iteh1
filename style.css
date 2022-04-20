@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 95vh;
+    
+}
+
+.container{
+    max-width: 100%;
+    padding: 2%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav .logo{
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 10px;
+   
+}
+nav ul{
+    list-style: none;
+    margin-left: 310px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    
+}
+
+nav ul li a{
+    padding: 20px 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover{
+    background-color: yellow;
+    color: black;
+
+}
+
+#glumac-table{
+    
+   margin-right: 600px;
+    width: 65%;
+   
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(247, 225, 104);
+    
+}
+
+#glumac-table thead{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: white;
+    align-items: center;
+}
+
+#glumac-table thead tr{
+    padding: 4px;
+    background-color:tomato
+    
+}
+
+
+#glumac-table th,
+#glumac-table td{
+    padding: 3px;
+}
+
+#glumac-table tbody tr{
+    border-bottom: 1px solid rgb(245, 238, 179) ;
+    color: black;
+    align-items: left;
+
+}
+
+#glumac-table tbody tr:nth-of-type(even){
+    background-color:white;
+    color: black;
+}
+
+#glumac-table tbody tr:last-of-type{
+    border-bottom: 2px solid tomato;
+}
+
+.quote{
+    margin-left: 60px;
+}
