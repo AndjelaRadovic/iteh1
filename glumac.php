@@ -1,7 +1,7 @@
 <?php
 include('layout.php');
 include('model/glumacKlasa.php');
-
+include('dbBroker.php');
 
 
 ?>
@@ -39,7 +39,7 @@ include('model/glumacKlasa.php');
 
         
         <tbody><?php
-        $glumci = Glumac::vratiGlumce();
+        $glumci = Glumac::getAll();
         if(count($glumci) == 0){
             echo "<h3>Ne postoje podaci o glumcima!</h3>";
         }
@@ -55,10 +55,10 @@ include('model/glumacKlasa.php');
         <td>
         <ul class='list-inline m-0'>
         <li class='list-inline-item'>
-            <button class='btn btn-primary btn-sm rounded-0' type='button' data-toggle='tooltip' data-placement='top' title='Izmeni'>Izmeni</button>
+            <button id='edit_glumac' name='edit_glumac' onclick='izmeniGlumca($glumac->id)' class='btn btn-primary btn-sm rounded-0' type='button' data-toggle='tooltip' data-placement='top' title='Izmeni'>Izmeni</button>
         </li>
         <li class='list-inline-item'>
-            <button class='btn btn-success btn-sm rounded-0' type='button' data-toggle='tooltip' data-placement='top' title='Obriši'>Obriši</button>
+            <button id='delete_glumac' name='delete_glumac' onclick='obrisiGlumca($glumac->id)' class='btn btn-success btn-sm rounded-0' type='button' data-toggle='tooltip' data-placement='top' title='Obriši'>Obriši</button>
         </li>
        
     </ul>

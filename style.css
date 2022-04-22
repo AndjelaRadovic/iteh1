@@ -4,20 +4,22 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(img/background.jpg);
+    background-image: url(img/minion.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 95vh;
+    min-height: 90vh;
+    width: 100%;
     
 }
 
 .container{
-    max-width: 100%;
-    padding: 2%;
+    
+  padding: 2%;
     margin: 0 auto;
 }
 nav{
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,17 +27,20 @@ nav{
 }
 
 nav .logo{
+    
+    margin-top: 10px;
     font-size: 30px;
     font-style: italic;
     color: black;
     font-weight: bold;
-    padding: 20px;
-    margin-bottom: 10px;
+    font-family: fantasy;
+    
+    margin-bottom: 30px;
    
 }
 nav ul{
     list-style: none;
-    margin-left: 310px;
+    margin-left: 20px;
 
 }
 
@@ -45,8 +50,8 @@ nav ul li{
 }
 
 nav ul li a{
-    padding: 20px 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    font-family: cursive;
     text-decoration: none;
     font-size: 20px;
     color: black;
@@ -58,31 +63,37 @@ nav ul li a{
 nav ul li a:hover{
     background-color: yellow;
     color: black;
+    width: 10px;
+    height: 10px;
 
 }
 
 #glumac-table{
     
-   margin-right: 600px;
+    margin-right: 600px;
     width: 65%;
-   
+   align-items: center;
     border-collapse: collapse;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 10px 10px;
     overflow: hidden;
     box-shadow: 0 0 20px rgb(247, 225, 104);
     
 }
 
 #glumac-table thead{
+    font-family: cursive;
+    align-items: center;
     margin-bottom: 10px;
     font-size: 1rem;
-    color: white;
+    color: black;
     align-items: center;
 }
 
 #glumac-table thead tr{
     padding: 4px;
-    background-color:tomato
+    background-color:yellow;
+    font-family: cursive;
+    align-items: center;
     
 }
 
@@ -90,12 +101,15 @@ nav ul li a:hover{
 #glumac-table th,
 #glumac-table td{
     padding: 3px;
+    align-items: center;
+
 }
 
 #glumac-table tbody tr{
     border-bottom: 1px solid rgb(245, 238, 179) ;
     color: black;
-    align-items: left;
+    align-items: center;
+    font-family: cursive;
 
 }
 
@@ -105,9 +119,118 @@ nav ul li a:hover{
 }
 
 #glumac-table tbody tr:last-of-type{
-    border-bottom: 2px solid tomato;
+    border-bottom: 2px solid rgba(239, 239, 10, 0.908);
 }
 
 .quote{
-    margin-left: 60px;
+    margin-top: 30px;
+    margin-left: 100px;
 }
+
+#reziser-table{
+    
+    margin-right: 600px;
+     width: 65%;
+     font-family: cursive;
+     border-collapse: collapse;
+     border-radius: 5px 5px 0 0;
+     overflow: hidden;
+     box-shadow: 0 0 20px rgb(247, 225, 104);
+     
+ }
+ 
+ #reziser-table thead{
+     margin-bottom: 10px;
+     font-size: 1rem;
+     color: black;
+     align-items: center;
+ }
+ 
+ #reziser-table thead tr{
+     padding: 4px;
+     background-color:yellow
+     
+ }
+ 
+ 
+ #reziser-table th,
+ #reziser-table td{
+     padding: 3px;
+ }
+ 
+ #reziser-table tbody tr{
+     border-bottom: 1px solid rgb(245, 238, 179) ;
+     color: black;
+     align-items: left;
+ 
+ }
+ 
+ #reziser-table tbody tr:nth-of-type(even){
+     background-color:white;
+     color: black;
+ }
+ 
+
+
+ .form-group{
+     margin-top: 6px;
+ }
+
+ .form-group .col-md-4{
+    padding: 5px;
+    margin-top: 5px;
+ }
+
+
+ #film-table{
+   position: center;
+   z-index: 2;
+   margin-top: 5px;
+   margin-right: 600px;
+    width: 72%;
+   
+   border-collapse: collapse;
+   border-spacing: 0;
+   border-radius: 12px 12px 0 0;
+   overflow: hidden;
+   box-shadow: 0 12px 5px rgba(32,32,32.3);
+   background: #fafafa;
+   text-align: center;  
+ }
+
+ #film-table thead{
+    
+    font-size: 1rem;
+   
+    align-items: center;
+}
+
+#film-table thead tr{
+    font-family: cursive;
+    background-color: rgb(89, 157, 224);
+}
+
+#film-table tbody tr{
+    font-family: cursive;
+
+}
+
+/*sortiranje*/
+#myInput {
+    color: black;
+    width: 355px;
+    height: 40px;
+    background: #ffbb54;
+    margin-top: 7px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+:placeholder-shown{
+    width: 300px;
+    height: 30px;
+} 
+

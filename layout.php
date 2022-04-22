@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "style.css">
     <script src="js/jquery-3.3.1.slim.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.tablesorter.min.js" type="text/javascript"></script>
 
-<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
 
-<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet"> 
 
 
     <title>Bioskop</title>
@@ -20,15 +22,24 @@
     <div class = "container">
         <nav>
             <div class = "logo">
-                <span>Repertoar</span>
+                <span>Kolekcija filmova</span>
             </div>
 
             <ul>
                 <li><a href="index.php">Početna</a></li>
-                <li><a href="#">Filmovi</a></li>
+                <li><a href="film.php">Filmovi</a></li>
                 <li><a href="glumac.php">Glumci</a></li>
-                <li><a href="#">Režiseri</a></li>
-                <li><a href="#">Više opcija</a></li>
+                <li><a href="reziser.php">Režiseri</a></li>
+                
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opcije za dodavanje <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dodajFilm.php">Dodaj film</a></li>
+                        <li><a href="dodajGlumca.php">Dodaj glumca</a></li>
+                        <li><a href="dodajRezisera.php">Dodaj režisera</a></li>
+                    </ul>
+                </li>
+           
             </ul>
         </nav>
 

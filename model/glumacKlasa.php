@@ -1,5 +1,5 @@
 <?php
-include('odgovor.php');
+include_once('response.php');
 
 class Glumac
 {
@@ -18,7 +18,7 @@ class Glumac
         $this->drzava_porekla = $drzava_porekla;
     }   
 
-    public function dodajGlumca()
+    public function addNew()
     {
         include_once('dbBroker.php');
         global $mysqli;
@@ -40,7 +40,7 @@ class Glumac
 
     }
 
-    public static function vratiGlumce(){
+    public static function getAll(){
         include_once('dbBroker.php');
         global $mysqli;
         $sql = "SELECT * FROM glumac";
@@ -59,7 +59,7 @@ class Glumac
         return $arrayResult;
     }
 
-    public static function vratId($id){
+    public static function getById($id){    
         include_once ('dbBroker.php');
         global $mysqli;
 
@@ -69,7 +69,7 @@ class Glumac
             echo "ERROR" . $mysqli->mysql_error;
             exit();
         }
-        $song = null;
+        $glumac = null;
         while($row = $result->fetch_object()){
             $glumac = new Glumac($row->ime,$row->prezime,$row->godine,$row->drzava_porekla);
             $glumac->id = $row->id;
@@ -78,7 +78,7 @@ class Glumac
         return $glumac;
     }
 
-    public function obrisiId(){
+    public function deleteById(){
         include_once ('dbBroker.php');
         global $mysqli;
 
@@ -93,7 +93,7 @@ class Glumac
         }
     }
 
-    public function izmeniGlumca(){
+    public function edit(){
         include_once('dbBroker.php');
         global $mysqli;
         $query = "UPDATE glumac SET ime = '" . $this->ime . "', prezime = '" . $this->prezime . "', godine = '" . $this->godine . "', drzava_porekla = '" . $this->drzava_porekla . "' WHERE id = $this->id";
@@ -102,7 +102,7 @@ class Glumac
         } else {
             return false;
         }
-    }
+    }   
 
 
 }

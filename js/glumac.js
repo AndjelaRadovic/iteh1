@@ -25,7 +25,7 @@ function obrisiGlumca(id) {
         type: 'GET',
         url: 'obrisiGlumca.php',
         data: 'id=' + id,
-        dataType: 'json',
+        dataType: 'json',   
         cache: false,
         success: function (response) {
             if (response.status == 1) {
