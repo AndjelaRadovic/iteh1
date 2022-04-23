@@ -39,7 +39,7 @@
 
             <div class="form-group">
                 <div class="col-md-4">
-                    <button type="submit" name="save" class="btn btn-primary">Sačuvaj!</button>
+                    <button type="submit" name="save" class="btn btn-primary" style="background-collor:rgb(89, 157, 224);">Sačuvaj!</button>
                 </div>
             </div>
 

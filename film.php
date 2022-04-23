@@ -71,17 +71,17 @@ include('dbBroker.php');
         </tbody>
     </table>
 
-    <div class="col-md-2" style = "font-family: cursive;">
-    <button id="btn-sortiraj" class="btn btn-normal" style="padding = 5px; background-color: yellow; border: 2px solid rgb(89, 157, 224); height:40px; font-size: 18px; border-radius: 15px;" onclick="sortTable()">Sortiraj tabelu</button>
-</div>
+      <div class="col-md-2" style = "font-family: cursive;">
+        <button id="btn-sortiraj" class="btn btn-normal" style="padding: 5px; background-color: yellow; border: 2px solid rgb(89, 157, 224); height:40px;font-size: 15px; border-radius: 15px;" onclick="sortTable()">Sortiraj tabelu</button>
+          </div>
 
-<div class="col-md-4" style = "font-family: cursive;">
-            <button id="btn-pretraga" class="btn btn-warning btn-block" style="padding = 5px; background-color:  yellow; border: 2px solid rgb(89, 157, 224); height:40px; font-size: 18px; border-radius: 15px;"> Pretraži film</button>
-            <input type="text" id="myInput" onkeyup="funkcijaZaPretragu()" placeholder="..." hidden>
+
+        <input type="text" id="myInput" placeholder="Pretraži po nazivu..." style="margin-left:15px; color:black; font-family:cursive; display:inline-block; padding: 5px; background-color:white; border: 2px solid rgb(89, 157, 224); height:40px; width: 200px; font-size: 15px; border-radius: 15px;"onkeyup="funkcijaZaPretragu()">
+            
+      
+
         </div>
-
-</div>
-<div id="film-edit">
+   <div id="film-edit">
 
 </div>
 </body>
@@ -95,7 +95,7 @@ include('dbBroker.php');
             table = document.getElementById("film-table");
             tr = table.getElementsByTagName("tr");
             for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
+                td = tr[i].getElementsByTagName("td")[1];
                 if (td) {
                     txtValue = td.textContent || td.innerText;
                     if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -118,8 +118,8 @@ include('dbBroker.php');
                 rows = table.rows;
                 for (i = 1; i < (rows.length - 1); i++) {
                     shouldSwitch = false;
-                    x = rows[i].getElementsByTagName("TD")[1];
-                    y = rows[i + 1].getElementsByTagName("TD")[1];
+                    x = rows[i].getElementsByTagName("TD")[2];
+                    y = rows[i + 1].getElementsByTagName("TD")[2];
                     if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
                         shouldSwitch = true;
                         break;

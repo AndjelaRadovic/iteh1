@@ -128,7 +128,8 @@ nav ul li a:hover{
 }
 
 #reziser-table{
-    
+    align-items: center;
+    align-content: center;
     margin-right: 600px;
      width: 65%;
      font-family: cursive;
@@ -148,7 +149,8 @@ nav ul li a:hover{
  
  #reziser-table thead tr{
      padding: 4px;
-     background-color:yellow
+     background-color:yellow;
+     align-items: center;
      
  }
  
@@ -156,12 +158,13 @@ nav ul li a:hover{
  #reziser-table th,
  #reziser-table td{
      padding: 3px;
+     align-items: center;
  }
  
  #reziser-table tbody tr{
      border-bottom: 1px solid rgb(245, 238, 179) ;
      color: black;
-     align-items: left;
+     align-items: center;
  
  }
  
@@ -207,7 +210,7 @@ nav ul li a:hover{
 
 #film-table thead tr{
     font-family: cursive;
-    background-color: rgb(89, 157, 224);
+    background-color: dodgerblue;
 }
 
 #film-table tbody tr{
@@ -229,8 +232,13 @@ nav ul li a:hover{
 }
 
 
-:placeholder-shown{
-    width: 300px;
-    height: 30px;
-} 
+
+.col-md-4{
+    padding: 5px;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
 
