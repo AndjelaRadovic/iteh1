@@ -15,7 +15,7 @@
 <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet"> 
 
 
-    <title>Bioskop</title>
+    <title>Kolekcija filmova</title>
     
 </head>
 <body>
